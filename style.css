@@ -1,11 +1,94 @@
+@font-face {
+    font-family: TitilliumWebReg;
+    src: url("./assets/font/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+    font-family: TitilliumWebBold;
+    src: url("./assets/font/TitilliumWeb-Bold.ttf");
+}
+
+@font-face {
+    font-family: TitilliumWebLight;
+    src: url("./assets/font/TitilliumWeb-Light.ttf");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /*padding: 0;*/
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: scroll;
+
+}
+
+.background {
+    background: linear-gradient(45deg, rgba(185,230,152,100), rgba(42,177,186,100));
+}
+
 .row.header div {
-  text-align: center;
+    font-family: TitilliumWebBold, serif;
+    text-align: center;
+    color: #53B7A7;
+    font-size: 36px;
+
 }
 
 .row.time div {
-  text-align: center;
+    font-family: TitilliumWebLight, serif;
+    text-align: center;
+    font-size: 20px;
+    color: #53B7A7;
+}
+.mainData {
+    width:100%;
+    /*padding-left: 150px;*/
+    /*padding-right: 150px;*/
+    padding: 2% 10%;
+}
+
+.row {
+    margin: 0;
+}
+
+.dataSet2 {
+    height:45%;
+}
+
+.number {
+    font-family: TitilliumWebBold, serif;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.name {
+    font-family: TitilliumWebLight, serif;
+    text-align: center;
+    color: white;
+    font-size: 18px;
 }
 
 .row.stats div {
-  text-align: center;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background: #4A4A4A;
+    font-family: myTest, serif;
 }
