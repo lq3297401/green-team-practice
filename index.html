@@ -1,35 +1,66 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-  </head>
+</head>
 
-  <body>
-    <div id="wrapper">
+<body>
+<div id="wrapper">
     <div class="row header">
-      <div class="col-12">
-        <p>Energy-savings Information Display</p>
-      </div>
+        <div class="col-12">
+            <p>Energy-savings Information Display</p>
+        </div>
     </div>
 
     <div class="row time">
-      <div class="col-12 col-sm-4 offset-sm-2">
-        <h2 class="time1">YEAR/MONTH/DAY</h2>
-      </div>
-      <div class="col-12 col-sm-4">
-        <h2 class="time2">HOUR:MINUTE:SECOND</h2>
-      </div>
+        <div class="col-12 col-sm-4 offset-sm-2">
+            <h2 class="time1">YEAR/MONTH/DAY</h2>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h2 class="time2">HOUR:MINUTE:SECOND</h2>
+        </div>
     </div>
 
     <div class="row dataSet2">
-
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th data-field="time">Date & Time</th>
+                    <th data-field="t1">T1</th>
+                    <th data-field="t2">T2</th>
+                    <th data-field="hvacKwh">HVAC kWh (Meter 1)</th>
+                    <th data-field="hvacWatts">HVAC Watts (Meter 1)</th>
+                    <th data-field="lightKwh">Light kWh (Meter 2)</th>
+                    <th data-field="lightWatts">Light Watts (Meter 2)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div class="row mainData background">
@@ -48,8 +79,8 @@
     </div>
 
     <footer>
-        Source From 7 Schools Total since Oct.2016.   Justlight Technology Inc.
+        Source From 7 Schools Total since Oct.2016. Justlight Technology Inc.
     </footer>
-  </div>
-  </body>
+</div>
+</body>
 </html>

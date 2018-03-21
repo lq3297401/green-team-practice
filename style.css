@@ -31,7 +31,7 @@ html, body {
 }
 
 .background {
-    background: linear-gradient(45deg, rgba(185,230,152,100), rgba(42,177,186,100));
+    background: linear-gradient(45deg, rgba(185, 230, 152, 100), rgba(42, 177, 186, 100));
 }
 
 .row.header div {
@@ -49,7 +49,7 @@ html, body {
 }
 
 .mainData {
-    width:100%;
+    width: 100%;
     padding: 2% 10%;
 }
 
@@ -58,7 +58,10 @@ html, body {
 }
 
 .dataSet2 {
-    height:50%;
+    font-family: TitilliumWebLight, serif;
+    height: 50%;
+    padding-top: 20px;
+    color: #4A4A4A;
 }
 
 .number {
@@ -84,6 +87,8 @@ footer {
     padding: 10px;
     color: white;
     text-align: center;
-    font-size:12px;
+    font-size: 12px;
     background: #4A4A4A;
 }
+
+
