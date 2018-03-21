@@ -26,10 +26,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    /*padding: 0;*/
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 50px 50px 0 50px;
     overflow: scroll;
 
 }
@@ -42,8 +39,7 @@ html, body {
     font-family: TitilliumWebBold, serif;
     text-align: center;
     color: #53B7A7;
-    font-size: 36px;
-
+    font-size: 38px;
 }
 
 .row.time div {
@@ -52,10 +48,9 @@ html, body {
     font-size: 20px;
     color: #53B7A7;
 }
+
 .mainData {
     width:100%;
-    /*padding-left: 150px;*/
-    /*padding-right: 150px;*/
     padding: 2% 10%;
 }
 
