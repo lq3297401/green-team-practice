@@ -26,9 +26,8 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 50px 50px 0 50px;
+    padding: 40px 50px 0 50px;
     overflow: scroll;
-
 }
 
 .background {
@@ -59,7 +58,7 @@ html, body {
 }
 
 .dataSet2 {
-    height:45%;
+    height:50%;
 }
 
 .number {
@@ -81,9 +80,10 @@ html, body {
 }
 
 footer {
-    padding: 20px;
+    font-family: TitilliumWebLight, serif;
+    padding: 10px;
     color: white;
     text-align: center;
+    font-size:12px;
     background: #4A4A4A;
-    font-family: myTest, serif;
 }
