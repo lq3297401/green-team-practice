@@ -1,65 +1,184 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
+<div id="wrapper">
     <div class="row header">
-      <div class="col-12">
-        <h1>Energy-savings Information Display</h1>
-      </div>
+        <div class="col-12">
+            <p>Energy-savings Information Display</p>
+        </div>
     </div>
 
     <div class="row time">
-      <div class="col-12 col-sm-4 offset-sm-2">
-        <h2 class="time1">YEAR/MONTH/DAY</h2>
-      </div>
-      <div class="col-12 col-sm-4">
-        <h2 class="time2">HOUR:MINUTE:SECOND</h2>
-      </div>
+        <div class="col-12 col-sm-4 offset-sm-2">
+            <h2 class="time1">YEAR/MONTH/DAY</h2>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h2 class="time2">HOUR:MINUTE:SECOND</h2>
+        </div>
     </div>
 
-    <div class="row energy-saved">
-      <div class="col-12 col-sm-5">
-        <p class="name">Total Energy Savings</p>
-      </div>
-      <div class="col-10 col-sm-5">
-        <p class="amount"></p>
-      </div>
-      <div class="col-2">
-        <p class="units">kWh</p>
-      </div>
+    <div class="row dataSet2">
+        <div class="table-responsive">
+            <table id="table" class="table table-hover">
+                <thead>
+                <tr>
+                    <th data-field="time" class="text-center">Date & Time</th>
+                    <th data-field="t1" class="text-center">T1</th>
+                    <th data-field="t2" class="text-center">T2</th>
+                    <th data-field="hvacKwh" class="text-center">HVAC kWh (Meter 1)</th>
+                    <th data-field="hvacWatts" class="text-center">HVAC Watts (Meter 1)</th>
+                    <th data-field="lightKwh" class="text-center">Light kWh (Meter 2)</th>
+                    <th data-field="lightWatts" class="text-center">Light Watts (Meter 2)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--line 1-->
+                <tr>
+                    <td>1</td>
+                    <td>xx1</td>
+                    <td>xx1</td>
+                    <td>xx1</td>
+                    <td>xx1</td>
+                    <td>xx1</td>
+                    <td>xx1</td>
+                </tr>
+                <!--line 2-->
+                <tr>
+                    <td>2</td>
+                    <td>xx2</td>
+                    <td>xx2</td>
+                    <td>xx2</td>
+                    <td>xx2</td>
+                    <td>xx2</td>
+                    <td>xx2</td>
+                </tr>
+                <!--line 3-->
+                <tr>
+                    <td>3</td>
+                    <td>xx3</td>
+                    <td>xx3</td>
+                    <td>xx3</td>
+                    <td>xx3</td>
+                    <td>xx3</td>
+                    <td>xx3</td>
+                </tr>
+                <!--line 4-->
+                <tr>
+                    <td>4</td>
+                    <td>xx4</td>
+                    <td>xx4</td>
+                    <td>xx4</td>
+                    <td>xx4</td>
+                    <td>xx4</td>
+                    <td>xx4</td>
+                </tr>
+                <!--line 5-->
+                <tr>
+                    <td>5</td>
+                    <td>xx5</td>
+                    <td>xx5</td>
+                    <td>xx5</td>
+                    <td>xx5</td>
+                    <td>xx5</td>
+                    <td>xx5</td>
+                </tr>
+                <!--line 6-->
+                <tr>
+                    <td>6</td>
+                    <td>xx6</td>
+                    <td>xx6</td>
+                    <td>xx6</td>
+                    <td>xx6</td>
+                    <td>xx6</td>
+                    <td>xx6</td>
+                </tr>
+                <!--line 7-->
+                <tr>
+                    <td>7</td>
+                    <td>xx7</td>
+                    <td>xx7</td>
+                    <td>xx7</td>
+                    <td>xx7</td>
+                    <td>xx7</td>
+                    <td>xx7</td>
+                </tr>
+                <!--line 8-->
+                <tr>
+                    <td>8</td>
+                    <td>xx8</td>
+                    <td>xx8</td>
+                    <td>xx8</td>
+                    <td>xx8</td>
+                    <td>xx8</td>
+                    <td>xx8</td>
+                </tr>
+                <!--line 9-->
+                <tr>
+                    <td>9</td>
+                    <td>xx9</td>
+                    <td>xx9</td>
+                    <td>xx9</td>
+                    <td>xx9</td>
+                    <td>xx9</td>
+                    <td>xx9</td>
+                </tr>
+                <!--line 10-->
+                <tr>
+                    <td>10</td>
+                    <td>x10</td>
+                    <td>x10</td>
+                    <td>x10</td>
+                    <td>x10</td>
+                    <td>x10</td>
+                    <td>x10</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <div class="row carbon-deduction">
-      <div class="col-12 col-sm-5">
-        <p class="name">Carbon Deducted</p>
-      </div>
-      <div class="col-10 col-sm-5">
-        <p class="amount"></p>
-      </div>
-      <div class="col-2">
-        <p class="units">kg</p>
-      </div>
+    <div class="row mainData background">
+        <div class=" col-sm-12 col-md-4 energy-saved">
+            <p class="number energy-saved amount">000000</p>
+            <p class="name">Total Energy Saving (kWh)</p>
+        </div>
+        <div class="col-sm-12 col-md-4 carbon-deduction">
+            <p class="number carbon-deduction amount">000000</p>
+            <p class="name">Carbon Deducted (Kg)</p>
+        </div>
+        <div class=" col-sm-12 col-md-4 trees-planted">
+            <p class="number trees-planted amount">000000</p>
+            <p class="name">Amount of Tree Planted</p>
+        </div>
     </div>
 
-    <div class="row trees-planted">
-      <div class="col-12 col-sm-5">
-        <p class="name">Amount of Trees Planted</p>
-      </div>
-      <div class="col-10 col-sm-5">
-        <p class="amount"></p>
-      </div>
-      <div class="col-2">
-        <p class="units">trees</p>
-      </div>
-    </div>
-  </body>
+    <footer>
+        Source From 7 Schools Total since Oct.2016. Justlight Technology Inc.
+    </footer>
+</div>
+</body>
 </html>
