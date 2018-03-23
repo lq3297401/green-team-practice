@@ -59,9 +59,14 @@ html, body {
 
 .dataSet2 {
     font-family: TitilliumWebLight, serif;
-    height: 50%;
+    text-align: center;
+    /*height: 50%;*/
     padding-top: 20px;
     color: #4A4A4A;
+}
+
+.text-center {
+    font-family: TitilliumWebBold, serif;
 }
 
 .number {
