@@ -1,105 +1,21 @@
 $(function () {
-  var response = '{"data":{"total_saving_power":751264,"total_reducing_co2":391408.54,"total_saving_trees":32304.35}}';
-  var modbus = JSON.stringify({"data": [
-    {
-      "time": "00:00",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:01",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:02",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:03",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:04",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:05",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:06",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:07",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:08",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    },
-    {
-      "time": "00:09",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
-    }
-  ]});
+  function getData() {
+    var dataA = JSON.parse(responseA).data;
+    var dataB = JSON.parse(responseB).data;
 
-  function updateData(responseData, modbusData) {
-    var dataA = JSON.parse(responseData).data;
+    updateData(dataA, dataB);
+    setInterval(
+      function() {updateData(dataA, dataB)},
+      // 1000 * 60 * 10 // 10 minutes
+      2000
+    );
+  }
+
+  function updateData(dataA, dataB) {
     $('.energy-saved .amount').text(dataA.total_saving_power)
     $('.carbon-deduction .amount').text(dataA.total_reducing_co2);
     $('.trees-planted .amount').text(dataA.total_saving_trees);
 
-    var dataB = JSON.parse(modbusData).data;
     var row;
     var col;
     dataB.forEach(function(e, i) {
@@ -130,7 +46,7 @@ $(function () {
     return number;
   }
 
-  updateData(response, modbus); // mock api call
+  getData();
 
   // var apiUrl = 'http://203.66.57.171/api_school.php?action=getTotalArea';
   // $.ajax({
@@ -148,6 +64,107 @@ $(function () {
   //   $('h2.time2').text(time2);
   // });
 
-  // var $table = $('#table');
-
 });
+
+var responseA = JSON.stringify(
+  { "data": {
+      "total_saving_power": 751264,
+      "total_reducing_co2": 391408.54,
+      "total_saving_trees": 32304.35
+  }}
+);
+
+var responseB = JSON.stringify(
+  {"data": [
+    {
+      "time": "00:09",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:08",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:07",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:06",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:05",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:04",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:03",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:02",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:01",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    },
+    {
+      "time": "00:00",
+      "t1": "19",
+      "t2": "20",
+      "hvacKwh": "11.1",
+      "hvacWatts": "11.1",
+      "lightKwh": "11.1",
+      "lightWatts": "11.1"
+    }
+  ]}
+);
