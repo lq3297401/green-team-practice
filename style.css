@@ -48,11 +48,6 @@ html, body {
     color: #53B7A7;
 }
 
-.mainData {
-    width: 100%;
-    padding: 2% 10%;
-}
-
 .row {
     margin: 0;
 }
@@ -73,7 +68,7 @@ html, body {
     font-family: TitilliumWebBold, serif;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .name {
@@ -95,5 +90,3 @@ footer {
     font-size: 12px;
     background: #4A4A4A;
 }
-
-
