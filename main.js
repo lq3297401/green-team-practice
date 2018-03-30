@@ -77,94 +77,94 @@ var responseA = JSON.stringify(
 var responseB = JSON.stringify(
   {"data": [
     {
-      "time": "00:09",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:09",
+      "t1": "292",
+      "t2": "291",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:08",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:08",
+      "t1": "293",
+      "t2": "291",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:07",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:07",
+      "t1": "291",
+      "t2": "291",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:06",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:06",
+      "t1": "292",
+      "t2": "292",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:05",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:05",
+      "t1": "293",
+      "t2": "292",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:04",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:04",
+      "t1": "291",
+      "t2": "293",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:03",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:03",
+      "t1": "291",
+      "t2": "292",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:02",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:02",
+      "t1": "291",
+      "t2": "291",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:01",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:01",
+      "t1": "292",
+      "t2": "291",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     },
     {
-      "time": "00:00",
-      "t1": "19",
-      "t2": "20",
-      "hvacKwh": "11.1",
-      "hvacWatts": "11.1",
-      "lightKwh": "11.1",
-      "lightWatts": "11.1"
+      "time": "3/30/18 19:00",
+      "t1": "293",
+      "t2": "292",
+      "hvacKwh": "221561",
+      "hvacWatts": "131072",
+      "lightKwh": "26850",
+      "lightWatts": "357"
     }
   ]}
 );
